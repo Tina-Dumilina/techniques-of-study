@@ -1,0 +1,480 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.page {
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 1;
+    transition: opacity .2s ease-out;
+}
+
+a:hover {
+    opacity: .5;
+    text-decoration: underline;
+}
+
+/* Шапка */
+.header {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    margin-bottom: 100px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.logo_place_header {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 64px;
+    width: 183px;
+    height: 32px;
+}
+
+.header__title {
+    margin: auto;
+    margin-left: 64px;
+    width: 730px;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold;
+}
+
+.header__subtitle {
+    position: absolute;
+    left: 64px;
+    bottom: 30px;
+    margin: 0;
+    width: 388px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.header__link {
+    color: #2f80ed;
+}
+
+.header__main-illustration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 765px;
+    height: 608px;
+}
+
+.header__square-pic {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    height: 568px;
+    width: 568px;
+    background-color: #2f80ed;
+    transform: rotate(-15deg);
+    animation: rotation 20s linear infinite;
+}
+
+/*Description*/
+.description {
+    margin-bottom: 100px;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+
+.two-columns__brief {
+    margin: 0;
+    width: 175px;
+    color: #2f80ed;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.two-columns__main-text {
+    min-width: 784px;
+    width: 80%;
+}
+
+.two-columns__paragraph {
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 34px;
+    font-size: 24px;
+}
+
+.two-columns__paragraph:last-child {
+    margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+    font-weight: bold;
+}
+
+/* Техники обучения */
+.technics {
+    margin-bottom: 100px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    column-gap: 100px;
+    row-gap: 60px;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.cards__image {
+    width: 160px;
+    height: 160px;
+    margin: 0 40px 43px;
+    border-radius: 50%;
+}
+
+.cards__title {
+    margin-bottom: 16px;
+    margin-top: 0;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards__description {
+    margin: 0;
+    line-height: 23px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Ted Talks */
+.video__iframes {
+    display: flex;
+    justify-content: space-between;
+    width: 1052px;
+    margin: 50px auto 0;
+}
+
+.video__iframe {
+    margin-bottom: -40px;
+    width: 516px;
+    height: 316px;
+    border: none;
+}
+
+/* История Барбары Оакли */
+.oakley {
+    padding-top: 160px;
+    background-color: #f2f2f2;
+}
+
+/*Фейнман*/
+.feinman {
+    position: relative;
+    height: 790px;
+    padding-top: 80px;
+    background: #f2f2f2 url(../images/feinman.png) left bottom no-repeat;
+}
+
+.feinman__title {
+    width: 648px;
+    margin: auto;
+    margin-bottom: 70px;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.feinman__subtitle {
+    margin: auto;
+    text-align: center;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.feinman__link {
+    position: absolute;
+    top: 49%;
+    right: 48px;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+/*Digits*/
+.digits {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-title {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: auto;
+}
+
+.table__cell {
+    width: 250px;
+    margin-top: 60px;
+}
+
+.table__heading {
+    margin-top: 0;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.table__text {
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Весь мир - школа  */
+.khan {
+    background-color: #f2f2f2;
+    padding-top: 105px;
+}
+
+.khan__container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.khan__author {
+    margin: 0;
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.khan__title {
+    margin: 0;
+    margin-bottom: 50px;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.khan__quote {
+    margin: 0;
+    margin-bottom: 68px;
+    width: 790px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.15;
+}
+
+.khan__quote-text {
+    margin: 0;
+    margin-bottom: 36px;
+    line-height: 34px;
+}
+
+.khan__quote-author {
+    display: inline-block;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.khan__quote-author-subline {
+    margin: 0;
+}
+
+.khan__book-container {
+    display: flex;
+    align-items: flex-start;
+    height: 608px;
+    overflow: hidden;
+}
+
+.khan__book-pic {
+    margin-right: 20px;
+    width: 620px;
+}
+
+.khan__buy-link {
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #2f80ed;
+}
+
+/*Кауфман*/
+.kaufman {
+    overflow: hidden;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #1f1f1f;
+    z-index: -2;
+}
+
+.kaufman__triangle {
+    background: url(../images/triangle.svg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    right: -210px;
+    z-index: -1;
+    width: 877px;
+    height: 877px;
+    animation: rotation 20s linear infinite;
+}
+
+.section-title_theme_dark {
+    color: #f2f2f2;
+}
+
+.section-subtitle_theme_dark {
+    color: #f2f2f2;
+}
+
+.table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
+}
+
+/* Полезные ресурсы */
+.resources {
+    margin-bottom: 217px;
+    padding-top: 100px;
+}
+
+.resources__logo-zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto 0;
+    width: 1100px;
+    padding: 0;
+}
+
+.resources__logo {
+    display: inline-block;
+    width: 270px;
+    text-align: center;
+}
+
+/*Футер*/
+.footer {
+    background-color: #1f1f1f;
+}
+
+.footer__columns {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    min-height: 350px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer__column {
+    color: #f2f2f2;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal; 
+}
+
+.footer__column_content_copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 711px;
+}
+
+.logo_place_footer {
+    width: 183px;
+    height: 35px;
+}
+
+.footer__author {
+    padding: 18px 0;
+    line-height: 25px;
+}
+
+.footer__column-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer__column-links {
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__column-link_facebook::before {
+    content: url(../images/facebook_white.svg);
+    margin-right: 5px;
+}
+
+.footer__column-link_vk::before {
+    content: url(../images/vk_white.svg);
+    margin-right: 5px;
+}
+
+.footer__column-link_instagram::before {
+    content: url(../images/instagram_white.svg);
+    margin-right: 5px;
+}
